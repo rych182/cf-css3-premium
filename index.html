@@ -15,14 +15,54 @@
 		}
 		.siames{
 			position: relative;
-			right: 10px;
-			bottom: 50px;
+			border-radius: 200px;
+		}
+		
+		.paisaje{
+			position: relative;
+		}
+
+		.titulo{
+		
+		}
+
+		.thumb{
+			margin: 10px;
+			border: 5px solid #ddd;
+			width: 150px;
+		}
+		.thumb:hover{
+			width: 200px;
+		}
+
+		.container{
+			position: relative;
+			height: 200px;
+			border: solid 5px red;
+		}
+/*IMPORTANTE PARA HACER RESPONSIVE*/
+		.responsive{
+			height: auto;
+			max-width: 100%;
 		}
 	</style>
 </head>
 <body>
-	<h1>Titulo con sombras</h1>
+	<div class="container">
+		<h1 class="titulo">Titulo con sombras</h1>	
+	
+	</div>
+	<div class="">
+		<img src="gato-siames.jpg" class="siames responsive"alt="">
+		<img src="landscape.jpg" class="paisaje responsive"alt="">
+	</div>
 	<a href="www.ricgc.com">Rich</a>
-	<img src="gato-siames.jpg" class="siames"alt="">
+	
+
+	<!--
+		margin: auto; sirve para ponerle una medida exacta a algo y el espacio restante de los lados se reparte por igual
+		IMPORTANTISIMO
+		Se recomienda siempre usar porcentajes
+-->
 </body>
 </html>

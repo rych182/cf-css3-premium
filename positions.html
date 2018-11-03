@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Positions</title>
+	<style>
+		body{
+			margin: 0;
+		}
+		.padre{
+			height: 600px;
+			width: 1000px;
+			background-color: orange;
+			position: relative;
+			left: 30px;
+			top: 30px; 
+			
+		}
+		.caja1{
+			width: 100px;
+			height: 100px;
+			background-color: green;
+			position: absolute;
+			left: -10px;
+			top: 10px;
+		}
+		.caja2{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			position: static;
+
+			
+		}
+		
+		.caja3{
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+			position: relative;
+			
+		}
+		.caja4{
+			width: 100px;
+			height: 100px;
+			background-color: gray;
+			position: absolute;
+			left: -10px;	
+			top: 10px;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="padre">
+		<div class="caja1"></div>
+		<!--
+		<div class="caja2"></div>
+		<div class="caja3"></div>
+		<div class="caja4"></div>
+	-->
+	</div>
+
+	<!--
+	static: no se mueve para ningun lado, toma como referenncia el  relative mas próximo
+
+	relative: "encima de los fixies" y toma como "referencia otro relative y static "
+
+	fixed: esta debajo de los "relative" y "absolute", y toma como referencia el "relative" y "static" mas próximo.
+	NOTA IMPORTANTE: si usas top o bottom con el fixed, tomara el top y bottom pero "DEL NAVEGADOR"
+
+	absolute: se pone ENCIMA DE TODO esta toma como referencia "el relative y static mas próximo"
+	NOTA IMPORTANTE: si usas top o bottom con el absolute, tomara el top y bottom pero "DEL NAVEGADOR"
+	
+	=== Cajas DENTRO de una caja padre RRELATIVE===
+	hijo relative: toma la esquina de la caja padre como referencia, si lo mueves en negativo se sale de la caja por "ENCIMA" de la caja padre
+	
+	hijo static: No se mueve para ningún lado
+
+	Hijo fixed:Toma como referencia el navegador, se pone por encima del padre
+
+	hijo absolue: Se pone encima de la caja padre
+-->
+</body>
+</html>
